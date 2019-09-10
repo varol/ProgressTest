@@ -12,6 +12,7 @@
 		046BB87B2328130A009103F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046BB8792328130A009103F3 /* Main.storyboard */; };
 		046BB87D2328130C009103F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046BB87C2328130C009103F3 /* Assets.xcassets */; };
 		046BB8802328130C009103F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046BB87E2328130C009103F3 /* LaunchScreen.storyboard */; };
+		046BB8882328131E009103F3 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BB8872328131E009103F3 /* ProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		046BB87C2328130C009103F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046BB87F2328130C009103F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046BB8812328130C009103F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046BB8872328131E009103F3 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				046BB8752328130A009103F3 /* AppDelegate.swift */,
 				046BB8772328130A009103F3 /* ViewController.swift */,
 				046BB8792328130A009103F3 /* Main.storyboard */,
+				046BB8872328131E009103F3 /* ProgressBar.swift */,
 				046BB87C2328130C009103F3 /* Assets.xcassets */,
 				046BB87E2328130C009103F3 /* LaunchScreen.storyboard */,
 				046BB8812328130C009103F3 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				046BB8782328130A009103F3 /* ViewController.swift in Sources */,
+				046BB8882328131E009103F3 /* ProgressBar.swift in Sources */,
 				046BB8762328130A009103F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

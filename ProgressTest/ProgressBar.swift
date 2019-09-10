@@ -14,12 +14,7 @@ class ProgressBar: UIView {
   private var textLayer: CATextLayer!
   private var gradientLayer: CAGradientLayer!
   
-  public var progress: CGFloat = 1 {
-    didSet {
-      didProgressUpdated()
-    
-    }
-  }
+  public var progress: CGFloat?
   
   // Only override draw() if you perform custom drawing.
   // An empty implementation adversely affects performance during animation.
@@ -89,7 +84,6 @@ class ProgressBar: UIView {
     let offset = min(width, height) * 0.1
 
     let layer = CATextLayer()
-    layer.string = "\(Int(progress * 180))"
     layer.backgroundColor = UIColor.clear.cgColor
     layer.foregroundColor = textColor
     layer.fontSize = fontSize
@@ -99,9 +93,9 @@ class ProgressBar: UIView {
     return layer
   }
   
-  private func didProgressUpdated() {
-    textLayer?.string = "\(Int(progress)) saniye kaldı"
-    foregroundLayer?.strokeEnd = progress
+    func didProgressUpdated(progress:Int) {
+    textLayer?.string = "\(progress) saniye kaldı"
+    //foregroundLayer?.strokeEnd = progress
   }
   
 }

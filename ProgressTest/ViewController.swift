@@ -19,18 +19,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
  
         
-        Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { (timer) in
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             self.countFired -= 1
             print(self.countFired)
-            
-            
-            DispatchQueue.main.async {
-                self.progressBar.progress = min(self.countFired, 1)
-
-                if self.progressBar.progress == 0 {
-                    timer.invalidate()
-                }
+            self.progressBar.progress = min(self.countFired, 1)
+            self.progressBar.didProgressUpdated(progress: Int(self.countFired))
+            if self.progressBar.progress == 0 {
+                timer.invalidate()
             }
+            
         }
         
         

@@ -7,33 +7,20 @@
 //
 
 import UIKit
+import SRCountdownTimer
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var progressBar: ProgressBar!
     
-    var countFired: CGFloat = 180
+    @IBOutlet weak var progresss: SRCountdownTimer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
  
+        progresss.start(beginingValue: 180)
         
-        Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { (timer) in
-            self.countFired -= 1
-            print(self.countFired)
-            
-            
-            DispatchQueue.main.async {
-                self.progressBar.progress = min(self.countFired, 1)
-
-                if self.progressBar.progress == 0 {
-                    timer.invalidate()
-                }
-            }
-        }
-        
-        
+       
 
     }
     

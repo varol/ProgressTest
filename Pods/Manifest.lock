@@ -1,0 +1,16 @@
+PODS:
+  - SRCountdownTimer (1.1)
+
+DEPENDENCIES:
+  - SRCountdownTimer
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SRCountdownTimer
+
+SPEC CHECKSUMS:
+  SRCountdownTimer: 9c92e444b5403c92f01dd6610299b8c634bc8562
+
+PODFILE CHECKSUM: d0160210669aee2bf061ac0422fded24ba996736
+
+COCOAPODS: 1.7.5
